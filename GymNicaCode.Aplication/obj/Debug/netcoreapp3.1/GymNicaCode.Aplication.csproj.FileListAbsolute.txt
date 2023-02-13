@@ -1,0 +1,13 @@
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\bin\Debug\netcoreapp3.1\GymNicaCode.Aplication.deps.json
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\bin\Debug\netcoreapp3.1\GymNicaCode.Aplication.dll
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\bin\Debug\netcoreapp3.1\GymNicaCode.Aplication.pdb
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\bin\Debug\netcoreapp3.1\GymNicaCode.Domain.dll
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\bin\Debug\netcoreapp3.1\GymNicaCode.Domain.pdb
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.csproj.AssemblyReference.cache
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.AssemblyInfoInputs.cache
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.AssemblyInfo.cs
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.csproj.CopyComplete
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.dll
+C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Aplication.pdb

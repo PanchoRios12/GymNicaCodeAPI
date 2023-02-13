@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "GymNicaCode.Aplication/1.0.0": {
+        "dependencies": {
+          "GymNicaCode.Domain": "1.0.0"
+        },
+        "runtime": {
+          "GymNicaCode.Aplication.dll": {}
+        }
+      },
+      "GymNicaCode.Domain/1.0.0": {
+        "runtime": {
+          "GymNicaCode.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GymNicaCode.Aplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GymNicaCode.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
