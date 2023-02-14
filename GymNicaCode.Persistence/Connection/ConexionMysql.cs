@@ -23,10 +23,7 @@ namespace GymNicaCode.Persistence.Connection
             var connectionString = SingletonConexiones.ConnectionString;
             var optionsBuilder = new DbContextOptionsBuilder<IConexion>();
             var serverVersion = ServerVersion.AutoDetect(connectionString);
-            optionsBuilder.UseMySql<IConexion>(connectionString, mysqlOptions =>
-            {
-                mysqlOptions.ServerVersion(serverVersion);
-            });
+            optionsBuilder.UseMySql<IConexion>(connectionString, serverVersion);
 
             return new IConexion(optionsBuilder.Options);
         }

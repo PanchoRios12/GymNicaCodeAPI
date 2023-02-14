@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Pomelo.EntityFrameworkCore.MySql.Storage;
 using GymNicaCode.Persistence.Connection;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace GymNicaCodeAPI.Configuration
 {
@@ -18,16 +19,12 @@ namespace GymNicaCodeAPI.Configuration
             var serverVersion = ServerVersion.AutoDetect(mySqlConnectionStr);
 
             //Se inicializa las conexiones globales
-            SingletonConexiones.optionsConexion = new DbContextOptionsBuilder<IConexion>().UseMySql(mySqlConnectionStr, mysqlOptions =>
-            {
-                mysqlOptions.ServerVersion(serverVersion);
-            });
+            SingletonConexiones.optionsConexion = new DbContextOptionsBuilder<IConexion>().UseMySql(mySqlConnectionStr, serverVersion);
             SingletonConexiones.ConnectionString = mySqlConnectionStr;
-            services.AddDbContextPool<IConexion>(options => options.UseMySql(mySqlConnectionStr,
+            services.AddDbContextPool<IConexion>(options => options.UseMySql(mySqlConnectionStr,serverVersion,
                 //Se configura la ruta de migraciones por defecto en este contexto
                 optionsBuilder => {
                     optionsBuilder.MigrationsAssembly(assemblyName);
-                    optionsBuilder.ServerVersion(serverVersion);
                 }));
 
         }

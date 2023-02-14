@@ -75,7 +75,7 @@ namespace GymNicaCode.Persistence.Connection
                 //Se recorren los indices del modelo y se dejan en formato snake case
                 foreach (var index in entity.GetIndexes())
                 {
-                    index.SetName(index.GetName().ToSnakeCase());
+                    index.SetDatabaseName(index.Name.ToSnakeCase());
                 }
             }
         }
