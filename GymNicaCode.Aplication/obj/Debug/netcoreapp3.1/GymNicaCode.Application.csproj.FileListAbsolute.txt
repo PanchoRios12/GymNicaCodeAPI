@@ -1,5 +1,0 @@
-C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Application.csproj.AssemblyReference.cache
-C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Application.AssemblyInfoInputs.cache
-C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Application.AssemblyInfo.cs
-C:\Users\Francisco\source\repos\GymNicaCodeAPI\GymNicaCode.Aplication\obj\Debug\netcoreapp3.1\GymNicaCode.Application.csproj.CoreCompileInputs.cache
