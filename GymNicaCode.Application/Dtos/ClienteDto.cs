@@ -1,48 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace GymNicaCode.Application.Dtos
 {
-    public class EmpleadoDto
+    public class ClienteDto
     {
         /// <summary>
-        /// id Empleado
+        /// id
         /// </summary>
-
         public int id { get; set; }
         /// <summary>
-        /// Codigo Empleado
+        /// CodigoCliente
         /// </summary>
-        public string CodigoEmpleado { get; set; }
+        public string CodigoCliente { get; set; }
         /// <summary>
-        /// Fecha Ingreso
+        /// NombresCliente
         /// </summary>
-        public DateTime FechaIngreso { get; set; }
+        public string NombresCliente { get; set; }
         /// <summary>
-        /// FechaIngresoString
+        /// ApellidosCliente
         /// </summary>
-        public string FechaIngresoString { get; set; }
+        public string ApellidosCliente { get; set; }
         /// <summary>
-        /// Nombres
+        /// NoCelular
         /// </summary>
-        public string Nombres { get; set; }
+        public int? NoCelular { get; set; }
         /// <summary>
-        /// Apellidos
+        /// Correo
         /// </summary>
-        public string Apellidos { get; set; }
-        /// <summary>
-        /// Celular
-        /// </summary>
-        public int Celular { get; set; }
+        public string Correo { get; set; }
         /// <summary>
         /// Cedula
         /// </summary>
         public string Cedula { get; set; }
         /// <summary>
-        /// Direccion
+        /// Foto
         /// </summary>
-        public string Direccion { get; set; }
+        public byte[] FotoCliente { get; set; }
+        /// <summary>
+        /// CalveDeAcceso
+        /// </summary>
+        public string ClaveDeAcceso { get; set; }
         /// <summary>
         /// Estado
         /// </summary>

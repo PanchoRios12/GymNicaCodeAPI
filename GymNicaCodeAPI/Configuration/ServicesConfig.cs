@@ -16,16 +16,19 @@ namespace GymNicaCodeAPI.Configuration
             //Services
             services.AddScoped<ITraduccionService, TraduccionService>();
             services.AddScoped<IEmpleadoService, EmpleadoService>();
+            services.AddScoped<IClienteService, ClienteService>();
             //Querys
             services.AddScoped<ITraductorQuery, TraduccionQuery>();
             services.AddScoped<ILoginQuery, LoginQuery>();
             services.AddScoped<IRolQuery, RolQuery>();
             services.AddScoped<IEmpleadoQuery, EmpleadoQuery>();
+            services.AddScoped<IClienteQuery, ClienteQuery>();
             //Commands
             services.AddScoped<ITraductorCommand, TraduccionCommand>();
             services.AddScoped<ILoginCommand, LoginCommand>();
             services.AddScoped<IRolCommand, RolCommand>();
             services.AddScoped<IEmpleadoCommand, EmpleadoCommand>();
+            services.AddScoped<IClienteCommand, ClienteCommand>();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace GymNicaCode.Application.Dtos
         {
             CreateMap<Traduccion, TraduccionDto>().ReverseMap();
             CreateMap<Empleado, EmpleadoDto>().ReverseMap();
+            CreateMap<Cliente, ClienteDto>().ReverseMap();
         }
     }
 }

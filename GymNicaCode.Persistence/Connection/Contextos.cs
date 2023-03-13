@@ -9,7 +9,7 @@ namespace GymNicaCode.Persistence.Connection
 {
     public class Contextos : IDisposable, IContextos
     {
-        private IConexion conMCE; //Conexion con la base de datos Maranatha Cargo Express
+        private IConexion conMCE; //Conexion con la base de datos 
         private IDapperConnection conDapper; //Conexion con la base de datos por medio de Dapper
         private UnitOfWork unitOfWork; //Unit of work
         //Constructor vacio

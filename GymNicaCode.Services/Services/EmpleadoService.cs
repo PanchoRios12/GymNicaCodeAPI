@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace GymNicaCode.Services.Services
 {
@@ -40,7 +41,7 @@ namespace GymNicaCode.Services.Services
         {
             using (var _unitOfWork= new Contextos().GetUnitOfWork())
             {
-                var query = new Persistence.Base.BaseSpecification<Empleado>(x => x.Estado == true);
+                var query = new Persistence.Base.BaseSpecification<Empleado>();
                 var totalData = await _unitOfWork.Repository<Empleado>().CountAsync(query);
                 totalData =totalData+ 1;
                 if ( Convert.ToString(totalData).Length==1)
@@ -55,8 +56,8 @@ namespace GymNicaCode.Services.Services
                 {
                     empleado.CodigoEmpleado = "0" + totalData.ToString();
                 }
-                
 
+                empleado.FechaIngreso = Convert.ToDateTime(empleado.FechaIngresoString);
                 var reporitory = _unitOfWork.Repository<Empleado>();
                 Empleado newEmpleado = new Empleado();
                 _mapper.Map(empleado, newEmpleado);
@@ -75,6 +76,10 @@ namespace GymNicaCode.Services.Services
         {
             using (var _unitOfWork = new Contextos().GetUnitOfWork())
             {
+                if ( empleado.FechaIngresoString != null )
+                {
+                    empleado.FechaIngreso = DateTime.ParseExact(empleado.FechaIngresoString, "dd/MM/yyyy", null);
+                }
                 var repository = _unitOfWork.Repository<Empleado>();
                 Empleado newEmpleado = new Empleado();
                 _mapper.Map(empleado, newEmpleado);
@@ -97,12 +102,7 @@ namespace GymNicaCode.Services.Services
                 return _mapper.Map<List<Empleado>, List<EmpleadoDto>>(listEmpleado.ToList());
             }
         }
-        /// <summary>
-        /// Obtiene una persona por Id
-        /// </summary>
-        /// <param name="IdPersona">IdPersona</param>
-        /// <returns>Retorna una persona</returns>
-        /// Johnny Arcia
+        
         public async Task<EmpleadoDto> empleadoPorId(int idEmpleado)
         {
             using (var _UnitOfWork = new Contextos().GetUnitOfWork())

@@ -6,6 +6,7 @@ using GymNicaCode.Domain;
 using GymNicaCode.Services.Validator;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,7 @@ namespace GymNicaCode.Services.Command
                 id = empleado.id,
                 CodigoEmpleado = empleado.CodigoEmpleado,
                 FechaIngreso = empleado.FechaIngreso,
+                FechaIngresoString = empleado.FechaIngresoString,
                 Nombres = empleado.Nombres,
                 Apellidos = empleado.Apellidos,
                 Celular = empleado.Celular,
@@ -49,7 +51,7 @@ namespace GymNicaCode.Services.Command
             {
                 return valor;
             }
-            throw new Exception("Erro al actualizar");
+            throw new Exception("Error al actualizar");
         }
 
         public async Task<EmpleadoDto> crearEmpleado(EmpleadoDto empleado)

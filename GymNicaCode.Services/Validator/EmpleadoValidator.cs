@@ -11,7 +11,6 @@ namespace GymNicaCode.Services.Validator
         public EmpleadoValidator()
         {
             RuleFor(x => x.CodigoEmpleado).NotEmpty();
-            RuleFor(x => x.FechaIngreso).NotEmpty();
             RuleFor(x => x.Nombres).NotEmpty();
             RuleFor(x => x.Apellidos).NotEmpty();
             RuleFor(x => x.Cedula).NotEmpty();

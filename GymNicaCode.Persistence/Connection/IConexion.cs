@@ -17,6 +17,7 @@ namespace GymNicaCode.Persistence.Connection
         //Lista de tablas
         public virtual DbSet<Traduccion> Traduccion { get; set; }
         public virtual DbSet<Empleado> Empleado { get; set; }
+         public virtual DbSet<Cliente> Cliente { get; set; }
 
 
         /// <summary>

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace GymNicaCodeAPI.Controllers
 {
     /// <summary>
-    /// Controller que se encarga de la manipulacion de tipo persona
+    /// Controller que se encarga de la manipulacion empleado
     /// </summary>
     /// Francisco Rios
     [Route("api/[controller]")]
