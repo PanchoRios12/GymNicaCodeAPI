@@ -3,6 +3,7 @@ using System;
 using GymNicaCode.Persistence.Connection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymNicaCode.Persistence.Migrations
 {
     [DbContext(typeof(IConexion))]
-    partial class IConexionModelSnapshot : ModelSnapshot
+    [Migration("20230409020059_cliente")]
+    partial class cliente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

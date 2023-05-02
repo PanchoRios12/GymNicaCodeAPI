@@ -21,6 +21,7 @@ namespace GymNicaCode.Persistence.Connection
         public IConexion CreateDbContext(string[] args)
         {
             var connectionString = SingletonConexiones.ConnectionString;
+            //var connectionString = "server=localhost; port=3306; database=GymNicaCode; user=root; password=Holamundo2; Persist Security Info=False; Connect Timeout=300;";
             var optionsBuilder = new DbContextOptionsBuilder<IConexion>();
             var serverVersion = ServerVersion.AutoDetect(connectionString);
             optionsBuilder.UseMySql<IConexion>(connectionString, serverVersion);
